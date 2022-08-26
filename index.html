@@ -144,12 +144,12 @@ function reset() {
   update('upperHubSt', 'upperHubSst', UHSt);
   update('lowerHubSt', 'lowerHubSst', LHSt);
   document.getElementById('scoutForm').reset();
+  document.location.reload(true);
 }
 
 function submit() {
   document.forms["scoutForm"].submit();
   reset();
-  document.location.reload(true);
 }
 
 var UHS = 0;
